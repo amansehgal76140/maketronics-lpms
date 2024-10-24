@@ -34,7 +34,7 @@ import AddQuoteDetails from './Pages/Lead/AddQuoteDetails.js';
 const router = createBrowserRouter([
   {
     path:"/",
-    element: <ProtectedRoute><App /></ProtectedRoute>
+    element: <Login />
   },
   {
     path: "/Login",

@@ -18,7 +18,9 @@ const setTokenAsCookie = (token) => {
   Cookies.set("token", token, {
     expires: 30,
     secure: true,
-    sameSite: "None"
+    sameSite: "None",
+    domain: "https://maketronics-lpms.onrender.com",  // Domain of the backend where cookie will be sent
+    path: "/"
   });
 };
 

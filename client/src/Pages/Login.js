@@ -18,9 +18,7 @@ const setTokenAsCookie = (token) => {
   Cookies.set("token", token, {
     expires: 30,
     secure: true,
-    sameSite: "None",    // Required for cross-origin cookies
-    path: '/',           // Ensure the cookie is accessible across the entire domain
-    domain: "maketronics-lpms.onrenderer.com"
+    sameSite: "None"
   });
 };
 
